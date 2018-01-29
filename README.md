@@ -17,7 +17,8 @@ where other controller folders will reside e.g for every controller associated w
 UserController
 * If a model has a controller, please try as much as possible to create the accompanying seed files(faker is integrated already) for the controller for pre-populating and 
 testing purpose
-* We will be using Form request for domain specific validations, the request files will reside in the Request sub-folder
+* We will be using [Form request](https://laravel.com/docs/5.5/validation#form-request-validation) for domain specific validations, the request files will reside in the Request sub-folder,
+this means for example Book Controller will have a BookRequest as it's form request. 
 * Don't forget to stage and commit auto-generated files like migrations, seeds, middlewares, controllers etc
 
  _This README is just for a kick start, it will be updated subsequently as we proceed and suggestions come in. We will be 
