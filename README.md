@@ -25,4 +25,4 @@ notified whenever it is updated. Please don't be afraid to unleash your creativi
  
  **Got any suggestions or improvement to our approaches?** Let's discuss it on our slack channel.
  
- ####Yours truely, [benmalcom](https://www.github.com "Google's Homepage")
+ ####Yours truely, [benmalcom](https://www.github.com/benmalcom)
