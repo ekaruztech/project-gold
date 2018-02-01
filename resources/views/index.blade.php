@@ -1,5 +1,9 @@
 @extends('layouts.app')
 
+@push('styles')
+    <link rel="stylesheet" href="{{ asset('css/index.css') }}" media="screen">
+@endpush
+
 @section('content')
     <div class="container-fluid slider-wrapper">
         <div class="row">

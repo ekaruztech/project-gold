@@ -1,8 +1,8 @@
 @extends('layouts.auth')
 
-@section('styles')
+@push('styles')
     <link rel="stylesheet" href="{{ asset('css/login.css') }}" media="screen">
-@endsection
+@endpush
 
 @section('content')
     <nav class="navbar bg-white absolute-position full-width align-self-center">

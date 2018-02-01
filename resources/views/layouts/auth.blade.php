@@ -11,7 +11,8 @@
 
     <link rel="stylesheet" href="{{ asset('css/global.css') }}" media="screen">
     <title>{{ config('app.name', 'Laravel') }}</title>
-    @yield('styles')
+    {{--Push page specific styles in this stack--}}
+    @stack('styles')
 </head>
 <div class="container-fluid auth-wrapper">
     <div class="row">
@@ -26,7 +27,8 @@
 <script src="{{ asset('lib/jquery/dist/jquery.min.js') }}"></script>
 <script src="{{ asset('lib/popper.js/dist/umd/popper.min.js') }}"></script>
 <script src="{{ asset('lib/bootstrap/dist/js/bootstrap.min.js') }}"></script>
-@yield('scripts')
+{{--Push page specific scripts in this stack--}}
+@stack('scripts')
 <body>
 </body>
 </html>
