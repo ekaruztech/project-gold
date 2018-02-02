@@ -1,0 +1,36 @@
+@import 'util.css';
+@import '../lib/bootstrap/dist/css/bootstrap.min.css';
+@import '../lib/font-awesome/css/font-awesome.min.css';
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet');
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.break-word{
+    overflow-wrap: break-word;
+}
+
+
+@media only screen and (min-width: 320px) and (max-width: 479px){
+    .login-page-nav{
+        top: 5px; bottom: 20px; display: block;margin-bottom: 50px;
+    }
+    .login-parent{
+        position: absolute; height: 100vh; background-color: #fff;
+    }
+    .logo{display: none; }
+    .logo-alt{margin-left: 5px; display: inline; }
+    .auth-banner{display: none; !important;}
+    .auth-form-wrapper{margin-top: 90px !important;}
+    .nav-right a{
+        display: inline-block;
+    }
+    .navbar > .navbar-collapse > .navbar-nav > li.nav-item{
+        display: inline !important;
+        float: left !important;
+        color: yellow !important;
+    }
+}
+@media only screen and (min-width: 480px) and (max-width: 767px) {}
+@media (min-width: 768px) {
+}
