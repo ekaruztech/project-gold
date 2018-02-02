@@ -2,12 +2,14 @@
  _Codebase for project gold_
 ## Instructions
 * Clone the project
-* Generate application keys if not available in env file (`php artisan key:generate`)
-* If cloning for the first time, create a .env file, copy the contents .env.example into the new .env file
+* If cloning for the first time, create a .env file(if not created already), copy the contents .env.example into the new .env file
 and continue your configurations
-* Create a new database if cloning for the first time and developing locally
-* Run composer (and npm?) install
-* Seed your database if seeds are available
+* Setup your database and update your .env file with the new database details
+* Install dependencies => `composer install`, `bower install` and (?) `npm install`
+* Seed your database if seeds are available (`php artisan db:seed`)
+* Generate application keys if it's not available in .env file (`php artisan key:generate`)
+* Start your server (`php artisan serve`)
+
 
  **Side note:** Don't forget to clear your cache or restart your server anytime you edit your .env file, 
 so that your app will reflect your new changes
