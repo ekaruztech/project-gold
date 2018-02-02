@@ -14,22 +14,22 @@
 </head>
 @guest
     @include('layouts.partials.nav')
-    @else
-        @include('layouts.partials.nav-user')
-        @endguest
-        @yield('content')
-        <script src="{{ asset('lib/jquery/dist/jquery.min.js') }}"></script>
-        <script src="{{ asset('lib/popper.js/dist/umd/popper.min.js') }}"></script>
-        <script src="{{ asset('lib/bootstrap/dist/js/bootstrap.min.js') }}"></script>
-        <script src="{{ asset('lib/bootstrap-select/dist/js/bootstrap-select.min.js') }}"></script>
-        <script>
-            $(document).ready(function () {
-                $('.selectpicker').selectpicker({
-                    size: 4
-                });
-            });
-        </script>
-        @stack('scripts')
-        <body>
-        </body>
+@else
+    @include('layouts.partials.nav-user')
+@endguest
+@yield('content')
+<script src="{{ asset('lib/jquery/dist/jquery.min.js') }}"></script>
+<script src="{{ asset('lib/popper.js/dist/umd/popper.min.js') }}"></script>
+<script src="{{ asset('lib/bootstrap/dist/js/bootstrap.min.js') }}"></script>
+<script src="{{ asset('lib/bootstrap-select/dist/js/bootstrap-select.min.js') }}"></script>
+<script>
+    $(document).ready(function () {
+        $('.selectpicker').selectpicker({
+            size: 4
+        });
+    });
+</script>
+@stack('scripts')
+<body>
+</body>
 </html>
