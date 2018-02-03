@@ -16,7 +16,7 @@
                                 {{ session('status') }}
                             </div>
                         @endif
-                        You are logged in!
+                        You are logged in. Your Account is: {{auth()->user()->verified() ? 'Verified' : 'Not verified'}}
                     </div>
                     <a href="{{ route('logout') }}"
                        onclick="event.preventDefault();
