@@ -42,7 +42,9 @@
                     </small>
                 @endif
             </div>
-            <button type="submit" class="btn btn-custom text-uppercase simplebox">Log In</button>
-        </form>
+            <a class="btn btn-link" href="{{ route('password.request') }}">
+                        Forgot Your Password?
+                </a>
+            <button type="submit" class="btn btn-custom text-uppercase simplebox">Log In</button>            
     </div>
 @endsection

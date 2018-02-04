@@ -7,6 +7,16 @@
 @section('content')
     <div class="container-fluid slider-wrapper">
         <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <div class="panel panel-default">
+                    <div class="panel-heading">Dashboard</div>
+                    <div class="panel-body">
+                        @if (session('status'))
+                            <div class="alert alert-success">
+                                {{ session('status') }}
+                            </div>
+                        @endif
+                        You are logged in. Your Account is: {{auth()->user()->verified() ? 'Verified' : 'Not verified'}}
             <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators align-content-end">
                     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
